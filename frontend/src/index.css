@@ -1,0 +1,472 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Estilo base do site */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background-color: #f5f5f5;
+}
+/* Layout base */
+header,
+footer {
+  background-color: #174436;
+  color: #fff;
+  padding: 20px 40px;
+}
+/*Container centralizado */
+
+header,
+footer {
+  display: flex;
+  justify-content: center;;
+}
+
+/*conteúdo interno limitado*/
+header nav,
+main,
+footer p {
+  width: 100%;
+  max-width: 1100px;
+}
+
+/*Área principal */
+main {
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 40px;
+  /*min-height: calc(100vh - 160px);*/
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1.5);
+}
+
+/* Menu */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.logo {
+  height: 74px;
+  width: auto;
+  display: block;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+/*Formulário de contato*/
+
+.contact-form {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.2 ease;
+  background-color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #174436;
+  box-shadow: 0 0 0 3px rgba(23, 68, 54, 0.1);
+}
+
+button {
+  margin-top: 10px;
+  background-color: #174436;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #0f2c22;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+  transform: none;
+}
+
+main h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.success-message {
+  margin-bottom: 15px;
+  padding: 12px;
+  background-color: #e6f4ea;
+  color: #1e4620;
+  border-radius: 6px;
+  font-weight: 500;
+}
+.error-message {
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #d93025;
+  font-weight: 500;
+}
+
+/* =========================
+   HERO - Página Início
+========================= */
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  border-radius: 6px 6px 0 0;
+
+  background-image: url("./assets/bilhar-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+}
+
+
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #040c09;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  max-width: 750px;
+  margin: 0 auto 30px auto;
+  color: black;
+}
+
+.cta-button {
+  background-color: #174436;
+  color: #ffffff;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #0f2c22;
+  transform: translateY(-2px);
+}
+
+.hero-content {
+  background: rgba(248, 242, 242, 0.144);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 800px;
+}
+
+
+/* =========================
+   SERVIÇOS - Página Início
+========================= */
+
+.services {
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #174436;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.service-card {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.service-card h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #174436;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* =========================
+   CONTATO NA HOME (GRID VERDE)
+========================= */
+
+.home-contact {
+  margin-top: 30px;
+  padding: 30px 20px;
+  background-color: #174436;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.home-contact h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.contact-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 40px;
+}
+
+.contact-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-grid strong {
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.contact-grid p {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* =========================
+   ABOUT - QUEM SOMOS
+========================= */
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-hero h1 {
+  font-size: 2.2rem;
+  color: #174436;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.about-card {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.about-card h2 {
+  margin-bottom: 15px;
+  color: #174436;
+  font-size: 1.3rem;
+}
+
+.about-card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.about-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.about-card li {
+  margin-bottom: 6px;
+}
+
+/* RESPONSIVIDADE MOBILE*/
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+    .hero {
+    padding: 60px 15px;
+  }
+
+  .hero-content {
+    padding: 25px;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .cta-button {
+    margin-top: 30px;
+    width: 80%;
+  }
+
+    .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .home-contact {
+    padding: 40px 15px;
+  }
+
+  .home-contact h2 {
+    font-size: 1.6rem;
+  }
+
+  /* Ajuste do Header no Mobile */
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+nav ul {
+  flex-direction: column;
+  gap: 8px; /* reduz espaço entre links */
+  font-size: 1rem;
+}
+
+header {
+  height: auto;
+  padding: 15px 0;
+}
+
+.logo {
+  height: 55px; /* ligeiramente menor */
+  margin: 0 auto;
+}
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .about-hero p {
+    font-size: 0.95rem;
+  }
+
+  .about-card {
+    padding: 20px;
+  }
+
+
+
+
+
+}
