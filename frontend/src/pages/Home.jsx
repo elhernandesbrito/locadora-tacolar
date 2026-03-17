@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import {Link} from "react-router-dom";
 
 function Home() {
   useEffect(() => {
@@ -14,9 +15,10 @@ function Home() {
           eventos corporativos, festas particulares, bares e estabelecimentos comerciais.
         </p>
 
-        <button className="cta-button">
+        <Link to="/contact" className="cta-button">
           Solicitar Orçamento
-        </button>
+        </Link>
+        
       </div>
       </section>
     

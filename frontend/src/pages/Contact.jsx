@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-
+import {sendMessage} from "../utils/api";
 
 function Contact() {
   
@@ -61,9 +61,10 @@ function Contact() {
     setIsLoading(true);
 
 
-    setTimeout(() => {
-      console.log('Dados enviados:', formData);
-
+    sendMessage(formData)
+      .then(data => {
+        console.log("Resposta da API:" , data);
+           
       setSubmitted(true);
       setIsLoading(false);
     
@@ -77,8 +78,11 @@ function Contact() {
       setTimeout(() => {
       setSubmitted(false);
     }, 3000);
-
-    }, 1500);
+    })
+    .catch(error => {
+      console.error('Erro ao enviar mensagem:', error);
+      setIsLoading(false);
+    });
  
   }
   return (
