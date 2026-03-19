@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import logo from '../assets/logo-tacolar.jpeg';
+import logo from '../assets/logo-tacolar1.jpeg';
 
 
 function Header() {

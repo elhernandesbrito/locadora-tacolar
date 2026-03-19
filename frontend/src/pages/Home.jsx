@@ -66,12 +66,12 @@ function Home() {
         <div className="contact-grid">
           <div>
             <strong>Telefone</strong>
-            <p>(00) 0000-0000</p>
+            <p>(94)3321-1591</p>
           </div>
 
           <div>
             <strong>WhatsApp</strong>
-            <p>(00) 00000-0000</p>
+            <p>(94)99256-8313</p>
           </div>
 
           <div>
@@ -81,7 +81,7 @@ function Home() {
 
           <div>
             <strong>Endereço</strong>
-            <p>Sua cidade - Seu Estado</p>
+            <p>Av. Antônio Maia, 1616 - Cidade Pioneira, Marabá - PA, 68500-005</p>
           </div>
         </div>
       </section>
